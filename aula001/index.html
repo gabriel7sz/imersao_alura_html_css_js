@@ -12,12 +12,54 @@
   
     <div class="container">
       <div class="content">
-        <h2>Quer converter Reais em outra moeda?</h2>
-        <p> Que tal converter esse valor?</p>
-        <button onclick="converter()">Bora converter!</button>
-      </div>
+        <h2>Conversão de moedas para Real (BRL)</h2>
+        <p> Data da cotação 01 de abril de 2025</p>
+        <!-- <button onclick="converter()">Bora converter!</button> -->
+         <input id="inputEntry" placeholder="Digite um valor">
+
+         <div class="btn__content">
+            <button id="btn1" onclick="convEuro()">
+              EUR → BRL (R$6,15)
+              <br>
+              <small>Euro</small>
+            </button>
+
+            <button id="btn2" onclick="convLibra()">
+              GBP → BRL (R$7,36)
+              <br>
+              <small>Libra Esterlina</small>
+            </button>
+
+            <button id="btn3" onclick="convPesos()">
+              ARS → BRL (R$0,01)
+              <br>
+              <small>Pesos Argentinos</small>
+            </button>
+        </div>
+
+        <div class="btn__content">
+           <button id="btn4" onclick="convBitcoin()">
+               BIT → BRL (R$400K)
+               <br>
+               <small>Bitcoin</small>
+            </button>
+
+            <button id="btn5" onclick="convCoroa()">
+              DKK → BRL (R$0,82)
+              <br>
+              <small>Coroa Dinamarquesa</small>
+            </button>
+
+            <button id="btn6" onclick="convRublo()">
+              RUB → BRL (R$0,06)
+              <br>
+              <small>Rublo Russo</small>
+            </button>
+         </div>
+
+      </div>  
     </div>
-    <footer>Alura - Imersão DEV - 31 de Março 2025</footer>
+    <footer>Direitos Reservados &copy; 01 de abril de 2025</footer>
 
     <!-- import js -->
     <script src="index.js"></script>
