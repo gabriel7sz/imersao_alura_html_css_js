@@ -1,0 +1,78 @@
+@import url('https://fonts.googleapis.com/css2?family=Balthazar&family=Funnel+Display:wght@300..800&family=Montserrat:ital,wght@0,700;1,700&family=Poppins:ital,wght@0,400;0,700;1,600&family=Roboto+Mono:ital,wght@0,600;1,600&family=Ubuntu:wght@300;400;500;700&display=swap');
+
+body {
+    background-color: black;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    position: relative;
+}
+
+/* Logo Styles */
+.logo {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    max-width: 150px;
+    width: auto;
+  }
+
+/* Container with the background image */
+.container {
+    background: url(/aula002/src/wallpaper.jpg) no-repeat center center/cover;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Content div for text and button */
+.content {
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.8);
+    padding: 20px 40px;
+    border-radius: 8px;
+  }
+
+.content h2 {
+    margin-bottom: 20px;
+}
+
+.content p {
+    font-size: 1.1em;
+}
+
+/* Button Styles */
+
+
+#btn__content {
+    font-size: 1.2em;
+    font-family: "Funnel Display", sans-serif;
+    font-weight: 700;
+    background-color: #D36D47;
+    color: #E4D7B7;
+    border-radius: 13px;
+    border: none;
+    padding: 16px 20px;
+    transition: background-color 0.3s ease;
+}
+
+#btn__content:hover {
+    background-color: #E4D7B7;
+    color: #D36D47;
+}
+  
+/* button:hover {
+    background-color: #1B3833;
+}
+   */
+/* Footer Styles */
+footer {
+    text-align: center;
+    padding: 10px;
+}
+  
