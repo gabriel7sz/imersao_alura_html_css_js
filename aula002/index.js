@@ -1,44 +1,57 @@
 function playGame() {
-
-    const AGE = parseInt(prompt('Quantos anos você tem?'));
-
-    if (isNaN(AGE) || AGE < 0 ) {
-        alert('Você não inseriu uma idade válida, você é burro?');
-        return;
+    let age = parseInt(prompt("Quantos anos você tem?"));
+  
+    while (isNaN(age) || age < 0) {
+      alert("Por favor, insira uma idade válida.");
+      age = parseInt(prompt("Quantos anos você tem?"));
     }
-
-    if (AGE >= 18) {
-        alert('Você já é maioral e pode perder para mim!');
-    } else {
-        alert('Você ainda é de menor, se eu mecher com menor, vou para cadeia. Volte quando for maiorzinho.')
-        return;
+  
+    if (age < 18) {
+      alert(
+        "Você ainda é menor de idade. Volte quando for maior para jogar."
+      );
+      return;
     }
-
-    const ARRAY = ['pedra', 'papel', 'tesoura'];
-
-    function computerChoice() {
-        const CHOICE = Math.floor(Math.random() * ARRAY.length);
-        return ARRAY[CHOICE];
-    }   
-
-    function whosWin(playerChoice, computerChoice) {
-        if (playerChoice === computerChoice) {
-            return "Empate!";
-        } else if (
-            (playerChoice === 'pedra' && computerChoice === 'tesoura') ||
-            (playerChoice === 'papel' && computerChoice === 'pedra') ||
-            (playerChoice === 'tesoura' && computerChoice === 'papel')
-        ) {
-            return 'Você venceu!';
-
-        } else {
-            return 'Diabo venceu!'
-        }
+  
+    alert("Você já é maior de idade! Vamos jogar!");
+  
+    const choices = ["pedra", "papel", "tesoura"];
+  
+    function getPlayerChoice() {
+      let choice = prompt("Escolha: Pedra, Papel ou Tesoura!").toLowerCase();
+      while (!choices.includes(choice)) {
+        alert("Escolha inválida. Por favor, tente novamente.");
+        choice = prompt("Escolha: Pedra, Papel ou Tesoura!").toLowerCase();
+      }
+      return choice;
     }
-
-    const playerChoice = prompt('Escolha: Pedra, Papel ou Tesoura!').toLowerCase();
-    const computersChoice = computerChoice();
-    const result = whosWin(playerChoice, computersChoice);
-
-    alert(`Você escolheu: ${playerChoice}\nDiabo escolheu: ${computersChoice}\nResultado: ${result}`);
-}
+  
+    function getComputerChoice() {
+      const randomIndex = Math.floor(Math.random() * choices.length);
+      return choices[randomIndex];
+    }
+  
+    function determineWinner(playerChoice, computerChoice) {
+      const rules = {
+        pedra: "tesoura",
+        papel: "pedra",
+        tesoura: "papel",
+      };
+  
+      if (playerChoice === computerChoice) {
+        return "Empate!";
+      } else if (rules[playerChoice] === computerChoice) {
+        return "Você venceu!";
+      } else {
+        return "O computador venceu!";
+      }
+    }
+  
+    const playerChoice = getPlayerChoice();
+    const computerChoice = getComputerChoice();
+    const result = determineWinner(playerChoice, computerChoice);
+  
+    alert(
+      `Você escolheu: ${playerChoice}\nComputador escolheu: ${computerChoice}\nResultado: ${result}`
+    );
+  }
