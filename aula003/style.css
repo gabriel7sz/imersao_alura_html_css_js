@@ -30,18 +30,21 @@ body {
 .content {
     display: flex;
     justify-content: center;
-
+    /* border: 1px solid red;    */
     margin-left: 49px;
-    margin-top: 100px;
+    margin-top: 40px;
     
     background-color: rgba(0, 0, 0, 0.9);
     border-top-right-radius: 120px;
     border-bottom-right-radius: 60px;
     border-top-left-radius: 20px;
-    width: 900px;
-    min-height: 600px;
     padding: 20px;
     color: #fff;
+    max-height: 800px;
+}
+
+.main__content {
+    max-width: 900px;
 }
 
 .main__content h1 {
@@ -69,7 +72,7 @@ body {
     cursor: pointer;
     padding: 20px 20px;
     border-radius: 20px;
-    background-color: #E77D00;
+    background-color: #ffffff73;
     color: #1d1c1c;
     font-family: "Funnel Display", sans-serif;
     font-size: 20px;
@@ -78,15 +81,16 @@ body {
 }
 
 .main__content__btn button:hover {
-    background-color: #1d1c1c;
-    color: #E77D00;
+    background-color: #E77D00;
+    color: #1d1c1c;
 }
 
+
+
 #dialog {
-    height: 155px;
-    max-width: 781px;
+    max-width: 760px;
     display: flex;
-    justify-content: center ;
+    justify-content: space-around ;
     font-size: 1.3em;
     font-family: monospace;
     letter-spacing: -2px;
@@ -105,19 +109,54 @@ body {
 
 #dialog small {
     position: absolute;
-    top: 554px;
+    top: 470px;
     left: 494px;
 }
 
 #challenge {
-    margin-top: 16px;
-    display: flex;
-    justify-content: center;
-    height: 200px;
+    margin-top: 20px;
+    height: 330px;
+    padding: 5px;
+    display: grid;
+    /* grid-template-rows: 50px 50px; */
+    text-align: center;
 }
 
-
-#challenge h2{
+.challenge__content h2{
     font-family: "Bungee Spice", sans-serif;
 }
 
+#challenge .challenge__content button {
+    margin-top: 10px;
+    margin-left: 25px;
+    background-color: #ffffff73;
+    border: none;
+    cursor: pointer;
+    padding: 10px 10px;
+    border-radius: 15px;
+    font-family: "Funnel Display", sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+    letter-spacing: -1px;
+}
+
+#challenge .challenge__content button:hover {
+    color: #000;
+    background-color: #E77D00;
+}
+
+#curiosity {
+   margin-top: 25px;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   min-width: 700px;
+   max-width: 800px;
+   border: 1px solid red;
+}
+
+.curiosity__content h2 {
+    font-family: "Funnel Display", sans-serif;
+    font-weight: bold;
+    font-size: 1.8em;
+}
