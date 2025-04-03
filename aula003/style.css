@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css2?family=Balthazar&family=Boldonse&family=Funnel+Display:wght@300..800&family=Montserrat:ital,wght@0,700;1,700&family=Poppins:ital,wght@0,400;0,700;1,600&family=Roboto+Mono:ital,wght@0,600;1,600&family=Ubuntu:wght@300;400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Balthazar&family=Boldonse&family=Bungee+Spice&family=Funnel+Display:wght@300..800&family=Montserrat:ital,wght@0,700;1,700&family=Poppins:ital,wght@0,400;0,700;1,600&family=Roboto+Mono:ital,wght@0,600;1,600&family=Ubuntu:wght@300;400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cutive+Mono&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fjalla+One&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+
+body {
+    background-color: #FFECCC;
+    background-image: url(/aula003/src/wallpaper__main.jpg);
+    background-repeat: no-repeat;
+    background-position: right;
+    background-size: contain;
+}
+
+.container {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    width: 100%;
+    min-height: 100dvh;
+}
+
+.content {
+    display: flex;
+    justify-content: center;
+
+    margin-left: 49px;
+    margin-top: 100px;
+    
+    background-color: rgba(0, 0, 0, 0.9);
+    border-top-right-radius: 120px;
+    border-bottom-right-radius: 60px;
+    border-top-left-radius: 20px;
+    width: 900px;
+    min-height: 600px;
+    padding: 20px;
+    color: #fff;
+}
+
+.main__content h1 {
+    font-size: 2.5em;
+    font-family: "Funnel Display", sans-serif;
+    font-weight: bold;
+    margin-top: 30px;
+}
+
+.main__content p {
+    font-size: 1.2em;
+    font-family: "Bungee Spice", sans-serif;
+    margin-left: 50px;
+    margin-top: 22px;
+}
+
+.main__content__btn {
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.main__content__btn button {
+    border: none;
+    cursor: pointer;
+    padding: 20px 20px;
+    border-radius: 20px;
+    background-color: #E77D00;
+    color: #1d1c1c;
+    font-family: "Funnel Display", sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+    letter-spacing: -1px;
+}
+
+.main__content__btn button:hover {
+    background-color: #1d1c1c;
+    color: #E77D00;
+}
+
+#dialog {
+    height: 155px;
+    max-width: 781px;
+    display: flex;
+    justify-content: center ;
+    font-size: 1.3em;
+    font-family: monospace;
+    letter-spacing: -2px;
+    padding: 20px 20px;    
+}
+
+#dialog p {
+    font-size: 1.2em;
+    font-family: monospace;
+    letter-spacing: -2px;
+}
+
+#dialog .dialog__img {
+    transform: rotate(-10deg);
+}
+
+#dialog small {
+    position: absolute;
+    top: 554px;
+    left: 494px;
+}
+
+#challenge {
+    margin-top: 16px;
+    display: flex;
+    justify-content: center;
+    height: 200px;
+}
+
+
+#challenge h2{
+    font-family: "Bungee Spice", sans-serif;
+}
+
