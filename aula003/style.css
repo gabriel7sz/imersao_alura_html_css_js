@@ -11,6 +11,10 @@
     list-style: none;
 }
 
+.border {
+    border: 2px solid yellow;
+}
+
 body {
     background-color: #FFECCC;
     background-image: url(/aula003/src/wallpaper__main.jpg);
@@ -40,7 +44,11 @@ body {
     border-top-left-radius: 20px;
     padding: 20px;
     color: #fff;
-    max-height: 800px;
+    max-height: 730px;
+}
+
+.maxHeight{
+    max-height: 570px;
 }
 
 .main__content {
@@ -54,7 +62,7 @@ body {
     margin-top: 30px;
 }
 
-.main__content p {
+.pstyle {
     font-size: 1.2em;
     font-family: "Bungee Spice", sans-serif;
     margin-left: 50px;
@@ -89,13 +97,16 @@ body {
 
 #dialog {
     max-width: 760px;
+    min-height: 182px;
     display: flex;
     justify-content: space-around ;
     font-size: 1.3em;
     font-family: monospace;
     letter-spacing: -2px;
     padding: 20px 20px;    
+    margin-bottom: 20px;
 }
+
 
 #dialog p {
     font-size: 1.2em;
@@ -103,22 +114,10 @@ body {
     letter-spacing: -2px;
 }
 
-#dialog .dialog__img {
-    transform: rotate(-10deg);
-}
-
-#dialog small {
-    position: absolute;
-    top: 470px;
-    left: 494px;
-}
-
 #challenge {
-    margin-top: 20px;
+    margin-top: 10px;
     height: 330px;
     padding: 5px;
-    display: grid;
-    /* grid-template-rows: 50px 50px; */
     text-align: center;
 }
 
@@ -145,18 +144,46 @@ body {
     background-color: #E77D00;
 }
 
+/* curiosity */
+
 #curiosity {
-   margin-top: 25px;
+   width: 800px;
+   min-height: 200px;
+   margin-top: 10px;
    display: flex;
    justify-content: center;
-   align-items: center;
-   min-width: 700px;
-   max-width: 800px;
-   border: 1px solid red;
 }
 
-.curiosity__content h2 {
+.curiosity__container {
+    width: 600px;
+    /* max-height: 245px; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.curiosity__container h2 {
     font-family: "Funnel Display", sans-serif;
     font-weight: bold;
-    font-size: 1.8em;
+    font-size:2.0em;
+    margin-bottom: 11px;
+}
+
+#curiosity__container__youKnow {
+    display: flex; 
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 13px;
+}
+
+#curiosity__container__youKnow img {
+    width: 350px;
+    transform: rotate(322deg);
+}
+
+#curiosity__container__youKnow p {
+    font-size: 1.2em;
+    font-family: monospace;
+    letter-spacing: -2px;
+    margin-left: 15px;
 }

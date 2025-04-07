@@ -9,10 +9,10 @@
 <body>
 
     <div class="container">
-        <div class="content">
+        <div class="content" id="content">
             <div class="main__content">
                 <h1>Teste seus conhecimentos em Pink Floyd!</h1>
-                <p>Escolha a opção que define sua experiência com esta banda.</p>
+                <p class="pstyle">Escolha a opção que define sua experiência com esta banda.</p>
                 <div class="main__content__btn">
                     <button onclick="iDontNow()">Não sei nada sobre <br />esta banda!</button>
                     <button onclick="iHeardAbout()">Já ouvi falar,<br /> mas não conheço muito.</button>
@@ -20,13 +20,17 @@
                 </div>
 
                 <div id="dialog">
+                    <div id="curiosity">
+                        <div class="curiosity__container">          
+                                <h2>Você sabia?</h2>
+                                <div id="curiosity__container__youKnow">
+                                    <img src="/aula003/src/images.png"  >
+                                    <p>
+                                        A "Black Strat" de David Gilmour, uma Fender Stratocaster preta, é icônica por sua história e som, tendo sido vendida por US$ 3,9 milhões em leilão, tornando-se a guitarra mais cara do mundo.
+                                    </p>                                 
+                                </div>
+                        </div>
                 </div>
-
-                <div id="curiosity">
-                    <div class="curiosity__content">
-                        <h2>Você sabia?</h2>
-                        
-                    </div>
                 </div>
 
                 <div id="challenge">
@@ -39,6 +43,8 @@
 
                     </div>        
                 </div>
+
+
             </div>       
         </div>
     </div>
