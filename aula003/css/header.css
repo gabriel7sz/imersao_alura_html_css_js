@@ -1,10 +1,10 @@
 /* container */
 
 .container {
-    width: 1000px;
+    width: 1200px;
     height: calc(100vh - 100px);
     display: flex;
-    justify-content: center;
+    /* justify-content: center; */
     margin: 0 auto;
 }
 
@@ -16,7 +16,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: #f1f1f1;
+    background-color: #27272A;
     padding: 10px;
 }
 
@@ -32,13 +32,13 @@
     font-size: 1.9em;
     font-family: 'Funnel Display';
     font-weight: bold;
-    color: #000;
+    color: #fff;
     display: flex;
     padding: 10px;
 }
 
 #navbar #title a:hover {
-    color: #27272A;
+    color: gray;
     transition: color .7s;
 }
 
@@ -65,168 +65,12 @@
 }
 
 #navbar #navegation ul li a {
-    color: #000;
+    color: #fff;
     font-family: 'Funnel Display';
     font-size: 1.6em;
 }
 
 #navbar #navegation ul li a:hover {
-    color: #27272A;
+    color: gray;
     transition: color .7s;
 }
-
-
-/* .content {
-    display: flex;
-    justify-content: center;
-    /* margin-left: 49px;
-    margin-top: 40px; */
-    /*
-    background-color: rgba(0, 0, 0, 0.9);
-    border-top-right-radius: 120px;
-    border-bottom-right-radius: 60px;
-    border-top-left-radius: 20px;
-    padding: 20px;
-    color: #fff;
-    max-height: 730px;
-}
-
-.maxHeight{
-    max-height: 570px;
-}
-
-.main__content {
-    max-width: 900px;
-}
-
-.main__content h1 {
-    font-size: 2.5em;
-    font-family: "Funnel Display", sans-serif;
-    font-weight: bold;
-    margin-top: 30px;
-}
-
-.pstyle {
-    font-size: 1.2em;
-    font-family: "Bungee Spice", sans-serif;
-    margin-left: 50px;
-    margin-top: 22px;
-}
-
-.main__content__btn {
-    margin-top: 10px;
-    display: flex;
-    justify-content: space-around;
-}
-
-.main__content__btn button {
-    border: none;
-    cursor: pointer;
-    padding: 20px 20px;
-    border-radius: 20px;
-    background-color: #ffffff73;
-    color: #1d1c1c;
-    font-family: "Funnel Display", sans-serif;
-    font-size: 20px;
-    font-weight: bold;
-    letter-spacing: -1px;
-}
-
-.main__content__btn button:hover {
-    background-color: #E77D00;
-    color: #1d1c1c;
-}
-
-#dialog {
-    max-width: 760px;
-    min-height: 182px;
-    display: flex;
-    justify-content: space-around ;
-    font-size: 1.3em;
-    font-family: monospace;
-    letter-spacing: -2px;
-    padding: 20px 20px;    
-    margin-bottom: 20px;
-}
-
-
-#dialog p {
-    font-size: 1.2em;
-    font-family: monospace;
-    letter-spacing: -2px;
-}
-
-#challenge {
-    margin-top: 10px;
-    height: 330px;
-    padding: 5px;
-    text-align: center;
-}
-
-.challenge__content h2{
-    font-family: "Bungee Spice", sans-serif;
-}
-
-#challenge .challenge__content button {
-    margin-top: 10px;
-    margin-left: 25px;
-    background-color: #ffffff73;
-    border: none;
-    cursor: pointer;
-    padding: 10px 10px;
-    border-radius: 15px;
-    font-family: "Funnel Display", sans-serif;
-    font-size: 20px;
-    font-weight: 400;
-    letter-spacing: -1px;
-}
-
-#challenge .challenge__content button:hover {
-    color: #000;
-    background-color: #E77D00;
-}
-
-/* curiosity */
-
-/* #curiosity {
-   width: 800px;
-   min-height: 200px;
-   margin-top: 10px;
-   display: flex;
-   justify-content: center;
-}
-
-.curiosity__container {
-    width: 600px;
-    max-height: 245px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.curiosity__container h2 {
-    font-family: "Funnel Display", sans-serif;
-    font-weight: bold;
-    font-size:2.0em;
-    margin-bottom: 11px;
-}
-
-#curiosity__container__youKnow {
-    display: flex; 
-    justify-content: space-around;
-    align-items: center;
-    margin-top: 13px;
-}
-
-#curiosity__container__youKnow img {
-    width: 350px;
-    transform: rotate(322deg);
-}
-
-#curiosity__container__youKnow p {
-    font-size: 1.2em;
-    font-family: monospace;
-    letter-spacing: -2px;
-    margin-left: 15px;
-}  
-*/

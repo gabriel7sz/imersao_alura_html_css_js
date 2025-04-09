@@ -12,11 +12,15 @@
     list-style: none;
 }
 
-.border {
+/* .border {
     border: 2px solid red;
-}
+} */
 
 body {
-    background-color: #27272A;
+    background-image: url(/aula003/src/wallpaper__main.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: right;
+    background-color: #f3f3f3;
 }
 
