@@ -12,15 +12,22 @@
     list-style: none;
 }
 
-/* .border {
+:root {
+    --font-padraozin: font-family: 'Poppins';
+    --cor-cinzinha: #27272A;
+    --cor-marronzinha : #FFECCC;
+}
+
+.border {
     border: 2px solid red;
-} */
+}
 
 body {
     background-image: url(/aula003/src/wallpaper__main.jpg);
+    background-color: var(--cor-marronzinha);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: right;
-    background-color: #f3f3f3;
 }
+
 

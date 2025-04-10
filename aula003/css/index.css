@@ -13,20 +13,20 @@ section .container .container__content article {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-color: #FFECCC;
+    background-color: transparent;
     margin-top: 30px;
     padding: 40px;
 }
 
 section .container .container__content article h1 {
-    font-family: 'Poppins';
+    font-family: var(--font-padraozin);
     font-size: 3.4em;
-    color: #27272A;
+    color: var(--cor-cinzinha);
 }
 
 section .container .container__content article h2 {
-    font-family: 'Poppins';
-    color: #27272A;
+    font-family: var(--font-padraozin);
+    color: var(--cor-cinzinha);
     margin-top: 30px;
 }
 
@@ -37,14 +37,23 @@ section .container .container__content article button {
     letter-spacing: -1px;
     padding: 12px 17px;
     margin-top: 20px;
-    background-color: #27272A;
+    background-color: var(--cor-cinzinha);
     color: #FFF;
     cursor: pointer;
     border-radius: 14px;
 }
 
 section .container .container__content article button:hover {
-    color: #27272A;
+    color: var(--cor-cinzinha);
     background-color: #FFF;
     transition: color 0.5s;
 }
+
+section .container .container__content article button a {
+    color: #FFF;
+}
+
+section .container .container__content article button a:hover {
+    color: var(--cor-cinzinha);
+}
+

@@ -16,7 +16,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: #27272A;
+    background-color: var(--cor-cinzinha);
     padding: 10px;
 }
 
