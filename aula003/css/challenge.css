@@ -2,12 +2,25 @@ body {
     background-image: none;
 }
 
-.container {
+.section__container {
+    width: 1200px;
+    margin: 0 auto;
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    height: calc(100vh - 100px);
+}
+
+.section__container section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#section1 {
+    width: 100%;
+    height: calc(100vh - 102px);
 }
 
 .titleH1 {
@@ -60,11 +73,8 @@ body {
 }
 
 #section2 {
-    height: calc(100vh + 10px);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border: 1px solid red;
+    width: 100%;
+    height: 100vh;
 }
 
 .ajusteImagem {
